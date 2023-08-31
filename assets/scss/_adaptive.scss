@@ -1,0 +1,200 @@
+@media screen and (max-width: 1200px) {
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width:721px) {
+    body .main{
+        margin-top: 60px;
+    }
+    body .works{
+        margin-top: 60px;
+    }
+    body .video{
+        margin-top: 60px;
+    }
+    body .benefits{
+        margin-top: 60px;
+    }
+    body .registration{
+        margin-top: 60px;
+    }
+    .title-svg{
+        margin-top: 60px;
+    }
+    body .contacts{
+        margin-top: 60px;
+    }
+    body footer{
+        padding: 60px 0;
+    }
+    h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 720px){
+    body .main{
+        margin-top: 60px;
+    }
+    body header{
+        width: 98vw;
+        position: fixed;
+        padding: 5px 0;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: $white;
+        border-bottom: 1px solid $black;
+    }
+    body .main .wrapper .slider{
+        width: 100%;
+    }
+    .title-svg{
+        margin-top: 40px;
+        padding: 10px 0;
+    }
+    body .works{
+        margin-top: 40px;
+    }
+    body .video{
+        margin-top: 40px;
+    }
+    body .video h3{
+        margin-bottom: 10px;
+    }
+    body .video .wrapper .video-cover{
+        padding-top: 60%;
+    }
+    body .benefits{
+        margin-top: 40px;
+    }
+    body .registration{
+        margin-top: 40px;
+    }
+    body .registration .wrapper .reg-photo{
+        width: 52%;
+        display: none;
+    }
+    body .registration .wrapper .reg-form{
+        width: 90%;
+        padding: 5%;
+        border: 2px solid $green;
+        border-radius: 8px;
+    }
+    body .benefits .wrapper .benefits-box{
+        width: 50%;
+    }
+    body .benefits .wrapper{
+        flex-wrap: wrap;
+    }
+    body .contacts{
+        margin-top: 40px;
+    }
+    body footer{
+        padding: 40px 0;
+    }
+    
+    body .contacts .block .contacts-container{
+        gap: 12px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body .contacts .block h1{
+        text-align: left;
+    }
+    body header .wrapper .burger-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .line{
+            width: 20px;
+            height: 2px;
+            background-color: $black;
+        }
+
+    }
+    body header .wrapper nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        background-color: $white;
+        border-right: 1px solid $green;
+        padding-left: 15px;
+        animation-name: openBurger;
+        animation-duration: 0.4s;
+        &.active{
+            display: flex;
+        }
+        a{
+           p{
+            font-size: 30px;
+            font-weight: 600;
+           } 
+        }
+        .exit{
+            position: absolute;
+            right: 50px;
+            top: 30px;
+            z-index: 999;
+            cursor: pointer;
+            @include button($green);
+            display: block;
+            padding: 16px;
+            border-radius: 8px;
+        }
+    }
+    h1{
+        font-size: 30px;
+    }
+    body .main .wrapper .title{
+        width: 100%;
+        gap: 25px;
+    }
+    body .main .wrapper{
+        flex-direction: column;
+    }
+}
+
+
+@keyframes openBurger{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeBurger{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
