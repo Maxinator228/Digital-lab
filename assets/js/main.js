@@ -1,3 +1,5 @@
+//  Выпадающее меню
+
 const burger = document.querySelector('.burger-menu')
 const nav = document.querySelector('nav')
 
