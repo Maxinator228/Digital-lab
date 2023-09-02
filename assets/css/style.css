@@ -17,6 +17,10 @@ input[type=text], input[type=email], input[type=tel], textarea {
   background-color: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn.green {
   width: fit-content;
   border: 1px solid var(--Primary, #52CC5E);
@@ -332,28 +336,17 @@ body .video h2 {
   margin-bottom: 50px;
   padding-top: 104px;
 }
-body .video .wrapper .video-cover {
-  position: relative;
-  width: 100%;
-  padding-top: 35%;
+body .video .video-cover {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
 }
-body .video .wrapper .video-cover img, body .video .wrapper .video-cover .content {
-  position: absolute;
-  top: 0;
-  left: 0;
+body .video .video-cover iframe {
+  border-radius: 10px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-body .video .wrapper .video-cover img {
-  object-fit: contain;
-}
-body .video .wrapper .video-cover svg {
-  width: 10%;
-  aspect-ratio: 1/1;
-  position: absolute;
-  top: 40%;
-  left: 45%;
 }
 body .benefits {
   margin-top: 125px;
@@ -680,9 +673,6 @@ body footer p {
   body .video h3 {
     margin-bottom: 10px;
   }
-  body .video .wrapper .video-cover {
-    padding-top: 60%;
-  }
   body .benefits {
     margin-top: 40px;
   }
@@ -758,6 +748,7 @@ body footer p {
   }
   body footer {
     padding: 40px 0;
+    margin: 0;
   }
   body header .wrapper .burger-menu {
     display: flex;

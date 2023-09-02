@@ -16,36 +16,14 @@ const burgerMenu = (open) => {
     }
 }
 
+// Маска для телефона
+
 let phoneAuth = document.querySelector('input[type=tel]')
 
 const maskOptions = {
     mask: '+{7}(000)000-00-00'
 }
-
 let phoneAuthMask = IMask(phoneAuth,maskOptions)
-
-// Функция для плавного скролиннга к якорю
-
-function smoothScroll(target){
-    const targetElement = document.querySelector(target)
-    if(targetElement){
-        window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: "smooth"
-        })
-    }
-}
-
-// Обработчики событий для ссылок
-
-const navLinks = document.querySelectorAll('nav a')
-navLinks.forEach((link) => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault()
-        const target = this.getAttribute('href')
-        smoothScroll(target)
-    })
-})
 
 // Слайдер
 
