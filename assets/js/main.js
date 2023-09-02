@@ -50,12 +50,13 @@ navLinks.forEach((link) => {
 // Слайдер
 
 const slider = document.querySelector('.slider-cover');
-const images = document.querySelectorAll('.slider img');
+const images = document.querySelectorAll('.slider .img');
 
 let currentIndex = 0;
 
 function showImage(index) {
     images.forEach((image, i) => {
+        image.style.display = 'block';
         image.style.transform = `translateX(${(i - index) * 100}%)`;
     });
 }
@@ -64,6 +65,8 @@ function nextImage() {
     currentIndex = (currentIndex + 1) % images.length;
     showImage(currentIndex);
 }
+
+showImage(0)
 
 setInterval(nextImage, 3000); 
 

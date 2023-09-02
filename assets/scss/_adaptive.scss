@@ -1,22 +1,29 @@
 @media screen and (max-width: 1200px) {
     h1{
-        font-size: 40px;
-    }
-    h2{
         font-size: 32px;
     }
+    body .works .wrapper h1{
+        font-size: 32px;
+        align-items: stretch;
+    }
+    h2{
+        font-size: 23px;
+    }
     h3{
-        font-size: 24px;
+        font-size: 20px;
     }
     h4{
         font-size: 18px;
+    }
+    h5{
+        font-size: 15px;
     }
     p{
         font-size: 14px;
     }
 }
 
-@media screen and (max-width:1199px) and (min-width:721px) {
+@media screen and (max-width:940px) and (min-width:701px) {
     body .main{
         margin-top: 60px;
     }
@@ -27,27 +34,87 @@
         margin-top: 60px;
     }
     body .benefits{
-        margin-top: 60px;
+        margin-top: 80px;
     }
+    
     body .registration{
-        margin-top: 60px;
-    }
-    .title-svg{
-        margin-top: 60px;
-    }
-    body .contacts{
         margin-top: 60px;
     }
     body footer{
         padding: 60px 0;
     }
     h2{
-        font-size: 22px;
+        font-size: 32px;
+    }
+    body .registration .wrapper{
+        flex-direction: column;
+    }
+    body .registration .wrapper .contacts .svg-text .circle{
+        width: 15px;
+        height: 15px;
+
+    }
+    body .registration .wrapper .contacts{
+        width: 100%;
+    }
+    body .registration .wrapper .contacts .svg-text{
+        flex-direction: column;
+    }
+    body .registration .wrapper .reg-form{
+        width: 85%;
+        margin-top: 10%;
+    }
+    .svg-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts-title{
+        text-align: center;
+    }
+    body .benefits .wrapper{
+        flex-direction: column;
+    }
+    body .benefits .wrapper .benef-text{
+        width: 100%;
+    }
+    body .benefits .wrapper .benef-container{
+        width: 100%;
+        margin-top: 5%;
+    }
+    body .benefits .wrapper .benef-container .column{
+        width: 100%;
+        flex-direction: row;
+    }
+    body .benefits .wrapper .benef-container .column.right{
+        margin: 0;
+    }
+    body .benefits .wrapper .benef-container .benef-block{
+        aspect-ratio: 0;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 700px){
     body .main{
         margin-top: 60px;
+    }
+    body .main .wrapper{
+        flex-direction: column;
+    }
+    body .main .wrapper .title h6{
+        margin: 10px 0 25px;
+    }
+    body .works .wrapper h1{
+        font-size: 30px;
+    }
+    body .works .work-img{
+        display: none;
+    }
+    body .works .wrapper .work-title{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     body header{
         width: 98vw;
@@ -61,10 +128,6 @@
     }
     body .main .wrapper .slider{
         width: 100%;
-    }
-    .title-svg{
-        margin-top: 40px;
-        padding: 10px 0;
     }
     body .works{
         margin-top: 40px;
@@ -81,40 +144,81 @@
     body .benefits{
         margin-top: 40px;
     }
+    body .benefits .wrapper{
+        flex-direction: column;
+    }
+    body .benefits .wrapper .benef-text{
+        width: 100%;
+    }
+    body .benefits .wrapper .benef-text p{
+        margin: 10px 0 15px;
+    }
+    body .benefits .wrapper .benef-container{
+        width: 100%;
+        margin-top: 5%;
+    }
+    body .benefits .wrapper .benef-container .column{
+        width: 100%;
+        flex-direction: row;
+    }
+    body .benefits .wrapper .benef-container .column.right{
+        margin: 0;
+    }
+    body .benefits .wrapper .benef-container .benef-block{
+        aspect-ratio: 0;
+    }
     body .registration{
         margin-top: 40px;
     }
-    body .registration .wrapper .reg-photo{
-        width: 52%;
-        display: none;
+    body .registration .wrapper{
+        flex-direction: column;
+    }
+    body .registration .wrapper .contacts .svg-text .circle{
+        width: 15px;
+        height: 15px;
+
+    }
+    body .registration .wrapper .contacts{
+        width: 100%;
+    }
+    body .registration .wrapper .contacts .svg-text{
+        margin-top: 18px;
+    }
+    body .registration .wrapper .contacts .contacts-title h2{
+        margin-bottom: 12px;
     }
     body .registration .wrapper .reg-form{
-        width: 90%;
-        padding: 5%;
-        border: 2px solid $green;
-        border-radius: 8px;
+        width: 85%;
+        margin-top: 20%;
     }
-    body .benefits .wrapper .benefits-box{
-        width: 50%;
+    body .registration .wrapper .reg-form p{
+        font-size: 12px;
     }
-    body .benefits .wrapper{
-        flex-wrap: wrap;
+    body .registration .wrapper .reg-form h2{
+        font-size: 16px;
     }
-    body .contacts{
-        margin-top: 40px;
+    body .registration .wrapper .reg-form .btn.green{
+        padding: 10px;
+    }
+    body .registration .wrapper .reg-form form .inp{
+        padding: 12px 15px;
+    }
+    body .registration .wrapper .reg-form form .inp{
+        margin-bottom: 10px;
+    }
+    .svg-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contacts-title{
+        text-align: center;
     }
     body footer{
         padding: 40px 0;
     }
     
-    body .contacts .block .contacts-container{
-        gap: 12px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    body .contacts .block h1{
-        text-align: left;
-    }
     body header .wrapper .burger-menu{
         display: flex;
         flex-direction: column;
@@ -151,6 +255,10 @@
            p{
             font-size: 30px;
             font-weight: 600;
+            &:hover{
+                color: $blue;
+            }
+            
            } 
         }
         .exit{
@@ -161,7 +269,7 @@
             cursor: pointer;
             @include button($green);
             display: block;
-            padding: 16px;
+            padding: 5px;
             border-radius: 8px;
         }
     }
@@ -171,9 +279,6 @@
     body .main .wrapper .title{
         width: 100%;
         gap: 25px;
-    }
-    body .main .wrapper{
-        flex-direction: column;
     }
 }
 
