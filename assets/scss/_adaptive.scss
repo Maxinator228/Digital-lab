@@ -23,14 +23,14 @@
     }
 }
 
-@media screen  and (max-width:1440px){
-    .wrapper{
+@media screen  and (max-width:1600px){
+    body .benefits .wrapper, body .works .wrapper{
         max-width: 1200px;
     }
 }
 
 @media screen  and (max-width:1024px){
-    .wrapper{
+    body .benefits .wrapper, body .works .wrapper{
         max-width: 900px;
     }
 }
